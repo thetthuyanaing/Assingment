@@ -1,0 +1,360 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.navbar {
+    background-color: #333; /* Coffee-inspired background */
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+}
+
+.navbar-nav .nav-link {
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    background-color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    background-color: #333; /* Matches navbar for consistency */
+    
+}
+
+.dropdown-item {
+    background-color: #333; /* Default background */
+    color: #ffcc00; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #145a32;
+    transform: scale(1.05);
+}
+
+.dropdown-item:focus {
+    background-color: #6c4f3d; /* Keeps hover effect when focused */
+    color: #ffffff; /* Matches hover color */
+}
+/* Styling for Cart Icon */
+.navbar-nav .cart {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    position: relative;
+    color: #fff;
+}
+
+.navbar-nav .cart .fa-shopping-cart {
+    margin-right: 10px;
+}
+
+.navbar-nav .cart .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+}
+
+.navbar-nav .cart-text {
+    font-weight: bold;
+}
+
+    .card1 {
+        margin: 20px 0;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: white;
+        z-index: 1;
+        background-image: url('../img/event1.jpg') ;
+        background-color: #333;
+        background-size:50% 100%;
+        background-repeat: no-repeat;
+     
+
+    }
+    .card2{
+            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            z-index: 1;
+            background-color: #333;
+            background-image: url('../img/event2.jpg') ;
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+            
+        }
+    .card3{
+                margin: 20px 0;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                color: white;
+                z-index: 1;
+                background-color: #333;
+                background-image: url('../img/event3.jpg') ;
+                background-size: 50% 100%;
+        background-repeat: no-repeat;
+           
+            }
+.card-body  {
+       
+        padding: 20px;
+        border-radius: 10px;
+        -webkit-text-fill-color:#ffcc00;
+        text-align:left;
+        margin-left:60%;
+        
+    }.container-register {
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #333;
+        -webkit-text-fill-color: #ffcc00;
+    }
+    
+    
+    
+    /* Form inputs styling */
+    .form-label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .form-control {
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        -webkit-text-fill-color:black ;
+    }
+    
+    /* Button styling */
+    .btn-submit {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        -webkit-text-fill-color: #ffcc00;
+    }
+    .btn-register {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        -webkit-text-fill-color: #ffcc00;
+    }
+    
+    .btn-register .btn-submit:hover :hover {
+        background-color: #8b5e46;
+        color: #fff;
+    }
+     
+
+
+    
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e4a33f;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e4a33f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #e4a33f;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+/* Responsive Design */
+
+/* Medium screens (Tablets) */
+@media (max-width: 768px) {
+    /* Adjust header elements */
+    header .logo {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    /* Adjust cards layout */
+    .card1, .card2, .card3 {
+        background-size: cover; /* Resize background images for smaller screens */
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .card-body {
+        margin-left: 10%; /* Reduce text margin */
+        text-align: left; /* Maintain alignment for readability */
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 480px) {
+    /* Header adjustments */
+    header .logo {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    /* Collapse navbar items */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card1, .card2, .card3 {
+        background-size: cover; /* Resize background images */
+        text-align: center;
+    }
+
+    .card-body {
+        margin: 0 auto; /* Center text */
+        padding: 15px; /* Adjust padding for small screens */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        margin: 5px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brewing Equipments</title>
+    <link rel="stylesheet" href="./CSS/brewingeq.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">  
+            <h1>Bean Boutique Coffee Shop</h1>
+        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark  ml-left">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-left ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menuDropdown">
+                                <a class="dropdown-item" href="coffeeselections.html">Coffee Selections</a>
+                                <a class="dropdown-item" href="brewingequipments.html">Brewing Equipments</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events-workshops.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="special-offers.html">Special Offers & Subscriptions</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      
+                        </ul>
+                        <!--Cart Icon-->
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> 
+                        <a class="nav-link cart" href="#" data-toggle="modal" data-target="#cartModal">
+                          <i class="fa fa-shopping-cart">
+                            <span class="badge badge-pill badge-danger" id="cart-count">0</span>
+                        </i>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+         
+         </nav>
+    </header>
+     <!-- Add Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- List of items in the cart -->
+        <ul id="cart-list" class="list-group">
+          <li class="list-group-item">Your cart is empty.</li>
+        </ul>
+        <hr>
+        <!-- Total price display -->
+        <div class="text-right">
+          <strong>Total: $<span id="cart-total">0.00</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!---Search Input-->
+    <input type="text" id="searchInput" placeholder="Find Product.....">
+    <br>
+    <br>
+    <section>
+    <div class="container">
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card text-center">
+                <img src="./img/brewingeq1.jpg" class="card-img-top h-50" alt="Fellow Aiden Brewer">
+                <div class="card-body">
+                  <h5 class="card-title">Fellow Aiden Brewer</h5>
+                  <p class="card-text">Sleek, versatile coffee brewing for large batches or single cups. Fully customizable with presets, timer, cold brew, and app connectivity.</p>
+                  <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalFellowAidenBrewer">Usage Instructions</button>
+                  <p class="card-price">$365.00</p>
+                  <button class="btn btn-buy">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for Fellow Aiden Brewer -->
+              <div class="modal fade" id="modalFellowAidenBrewer" tabindex="-1" aria-labelledby="modalFellowAidenBrewerLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFellowAidenBrewerLabel">Fellow Aiden Brewer - Usage</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Usage Instructions:</strong></p>
+                            <ul>
+                                <li>Step 1: Add coffee grounds and water.</li>
+                                <li>Step 2: Select your brewing option.</li>
+                                <li>Step 3: Press start to brew.</li>
+                                <li>Step 4: Serve and enjoy!</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card text-center">
+                <img src="./img/brewingeq2.jpg" class="card-img-top h-50" alt="NanoFoamer Frother PRO">
+                <div class="card-body">
+                  <h5 class="card-title">NanoFoamer Frother PRO</h5>
+                  <p class="card-text">
+                    Effortless, consistent milk foaming without a steam wand. Three flow controllers ensure perfect texture for any milk type.</p>
+                    <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalNanoFoamerFrotherPRO">Usage Instructions</button>
+                    <p class="card-price">$159.00</p>
+                  <button class="btn btn-buy">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          <!-- Modal for NanoFoamer Frother PRO -->
+          <div class="modal fade" id="modalNanoFoamerFrotherPRO" tabindex="-1" aria-labelledby="modalNanoFoamerFrotherPROLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalNanoFoamerFrotherPROLabel">NanoFoamer Frother PRO - Usage</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Usage Instructions:</strong></p>
+                        <ul>
+                            <li>Step 1: Fill your pitcher with the desired milk type and quantity.</li>
+                            <li>Step 2: Attach the flow controller that suits your preferred foam texture.</li>
+                            <li>Step 3: Submerge the frother in the milk, holding it slightly angled to create a vortex.</li>
+                            <li>Step 4: Press and hold the power button to start foaming the milk for 15-30 seconds.</li>
+                            <li>Step 5: Once foaming is complete, gently tap the pitcher to settle the foam.</li>
+                            <li>Step 6: Pour the frothed milk into your drink and enjoy!</li>
+                        </ul>
+                        <p><strong>Cleaning:</strong> Immediately rinse the frother under warm water to remove milk residue.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+<!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card text-center">
+                <img src="./img/brewingeq3.jpg" class="card-img-top h-50" alt="Flair 58 Plus">
+                <div class="card-body">
+                  <h5 class="card-title">Flair 58 Plus</h5>
+                  <p class="card-text">Versatile manual espresso machine with a heated reservoir, 58mm portafilter, and stylish walnut accents. Perfect for traditional or modern espresso styles.</p>
+                  <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalFlair58Plus">Usage Instructions</button>
+                  <p class="card-price">$640.00</p>
+                  <button class="btn btn-buy">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+        <!-- Modal for Flair 58 Plus -->
+        <div class="modal fade" id="modalFlair58Plus" tabindex="-1" aria-labelledby="modalFlair58PlusLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="modalFlair58PlusLabel">Flair 58 Plus - Usage</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <p><strong>Usage Instructions:</strong></p>
+                      <ul>
+                          <li>Step 1: Preheat the Flair 58 Plus group head by activating the heating system.</li>
+                          <li>Step 2: Grind fresh coffee beans to a fine espresso consistency.</li>
+                          <li>Step 3: Place the 58mm portafilter onto the scale, add 18-20 grams of coffee, and tamp evenly.</li>
+                          <li>Step 4: Insert the portafilter into the group head and lock it securely.</li>
+                          <li>Step 5: Add hot water (92-96°C) into the reservoir.</li>
+                          <li>Step 6: Pull the lever slowly and steadily to extract the espresso shot.</li>
+                          <li>Step 7: Release the lever when the desired amount of espresso is extracted (usually 25-35 seconds).</li>
+                          <li>Step 8: Remove the portafilter, knock out the used coffee puck, and clean all parts.</li>
+                      </ul>
+                      <p><strong>Cleaning:</strong> Rinse the portafilter, group head, and water reservoir thoroughly after each use to maintain performance.</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+              <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center">
+                    <img src="./img/brewingeq4.jpg" class="card-img-top h-50" alt="Bonavita Metropolitan Automatic Brewer">
+                    <div class="card-body">
+                      <h5 class="card-title">Bonavita Metropolitan Automatic Brewer</h5>
+                      <p class="card-text">Streamlined design with 200–205°F brewing, full-size grounds basket, and glass carafe for pure coffee flavor—one-touch simplicity!</p>
+                      <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalBonavitaBrewer">Usage Instructions</button>
+                      <p class="card-price">$150.00</p>
+                      <button class="btn btn-buy">Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+              <!-- Modal for Bonavita Metropolitan Automatic Brewer -->
+                <div class="modal fade" id="modalBonavitaBrewer" tabindex="-1" aria-labelledby="modalBonavitaBrewerLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="modalBonavitaBrewerLabel">Bonavita Metropolitan Automatic Brewer - Usage</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <p><strong>Usage Instructions:</strong></p>
+                              <ul>
+                                  <li>Step 1: Fill the water reservoir with fresh, filtered water to the desired level.</li>
+                                  <li>Step 2: Place a coffee filter in the brew basket and add your preferred amount of coffee grounds.</li>
+                                  <li>Step 3: Slide the brew basket into position over the carafe.</li>
+                                  <li>Step 4: Place the glass carafe on the warming plate under the brew basket.</li>
+                                  <li>Step 5: Press the power button to start the brewing process.</li>
+                                  <li>Step 6: Wait until the brewing cycle is complete and enjoy your fresh coffee.</li>
+                              </ul>
+                              <p><strong>Cleaning:</strong> Empty the coffee grounds and wash the filter basket, carafe, and lid with warm soapy water after each use.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+<!-- Card 5 -->
+                  <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                      <img src="./img/brewingeq5.jpg" class="card-img-top h-50" alt="Fellow Ode Gen 2 Grinder">
+                      <div class="card-body">
+                        <h5 class="card-title">Fellow Ode Gen 2 Grinder</h5>
+                        <p class="card-text">Featuring premium 64mm burrs for exceptional flavor balance and versatility. Compatible with SSP and other burr variations for ultimate customization.<p>
+                        <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalFellowOdeGen2Grinder">Usage Instructions</button>
+                        <p class="card-price">$350.00</p>
+                        <button class="btn btn-buy">Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+              <!-- Modal for Fellow Ode Gen 2 Grinder -->
+              <div class="modal fade" id="modalFellowOdeGen2Grinder" tabindex="-1" aria-labelledby="modalFellowOdeGen2GrinderLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFellowOdeGen2GrinderLabel">Fellow Ode Gen 2 Grinder - Usage</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Usage Instructions:</strong></p>
+                            <ul>
+                                <li>Step 1: Add coffee beans to the hopper.</li>
+                                <li>Step 2: Choose your desired grind size using the grind setting options (note: preset settings).</li>
+                                <li>Step 3: Place the dosing cup under the grinder portafilter.</li>
+                                <li>Step 4: Press the start button to begin grinding.</li>
+                                <li>Step 5: Wait until the grinder has finished processing the coffee grounds.</li>
+                                <li>Step 6: Remove the dosing cup and serve ground coffee for brewing.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+<!-- Card 6 -->
+              <div class="col-md-4 mb-4">
+                <div class="card text-center">
+                  <img src="./img/brewingeq6.jpg" class="card-img-top h-50" alt="KINGrinder K0 Grinder">
+                  <div class="card-body">
+                    <h5 class="card-title">KINGrinder K0 Grinder</h5>
+                    <p class="card-text">Durable, lightweight grinder with 40 precise settings, dual bearing alignment, and ergonomic design. Ideal for filter coffee and capable of espresso.</p>
+                    <button class="btn btn-buy" data-bs-toggle="modal" data-bs-target="#modalKINGrinderK0Grinder">Usage Instructions</button>
+                    <p class="card-price">$59.00</p>
+                    <button class="btn btn-buy">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <!-- Modal for KINGrinder K0 Grinder -->
+          <div class="modal fade" id="modalKINGrinderK0Grinder" tabindex="-1" aria-labelledby="modalKINGrinderK0GrinderLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalKINGrinderK0GrinderLabel">KINGrinder K0 Grinder - Usage</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Usage Instructions:</strong></p>
+                        <ul>
+                            <li>Step 1: Adjust the grind setting to your desired level using the adjustment knob.</li>
+                            <li>Step 2: Add coffee beans to the grinder’s hopper.</li>
+                            <li>Step 3: Attach the handle to the top of the grinder.</li>
+                            <li>Step 4: Turn the handle in a clockwise direction to grind the beans.</li>
+                            <li>Step 5: Once grinding is complete, remove the grounds collector from the bottom.</li>
+                            <li>Step 6: Use the freshly ground coffee for your preferred brewing method.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+</section>
+            <footer>
+              <div class="footer-container">
+                  <!-- About Section -->
+                  <div class="footer-section about">
+                      <h2>About Bean Boutique</h2>
+                      <p>
+                          Your go-to boutique for the finest coffee beans, brewing equipment,
+                          and coffee-related events. Join our community and savor the best
+                          coffee experience!
+                      </p>
+                  </div>
+                  <!-- Quick Links Section -->
+                  <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="coffeeselections.html">Coffee Selection</a></li>
+                        <li><a href="brewingequipments.html">Brewing Equipment</a></li>
+                        <li><a href="events-workshops.html.html">Events</a></li>
+                        <li><a href="special-offers.html">Special Offers</a></li>
+                    </ul>
+                </div>
+                  <!-- Contact Section -->
+                  <div class="footer-section contact">
+                      <h2>Contact Us</h2>
+                      <p>Email: Beanboutiquecoffee@email.com</p>
+                      <p>Phone: 0977733222</p>
+                      <p>Location: 23, Coffee Lane, Yangon City</p>
+                  </div>
+                  <!-- Social Apps Section -->
+                  <div class="social-icons">
+                      <a href="https://www.instagram.com/" class="quick_link">
+                          <i class="fa fa-instagram fa-2x"></i>
+                      </a>
+                      <a href="https://www.facebook.com/" class="quick_link">
+                          <i class="fa fa-facebook fa-2x"></i>
+                      </a>
+                      <a href="https://www.youtube.com/" class="quick_link">
+                          <i class="fa fa-youtube fa-2x"></i>
+                      </a>
+                      <a href="https://www.twitter.com/" class="quick_link">
+                          <i class="fa fa-twitter fa-2x"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                  <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+              </div>
+          </footer>
+          
+    <script>
+      // Initialize the cart as an empty array
+      let shoppingCart = [];
+    
+      // Update the cart count and total dynamically
+      function updateCartDisplay() {
+        const cartCount = shoppingCart.length;
+        document.getElementById('cart-count').innerText = cartCount;
+    
+        const cartList = document.getElementById('cart-list');
+        const cartTotal = document.getElementById('cart-total');
+    
+        // Clear the current cart display
+        cartList.innerHTML = '';
+    
+        if (cartCount === 0) {
+          cartList.innerHTML = '<li class="list-group-item">Your cart is empty.</li>';
+          cartTotal.innerText = '0.00';
+        } else {
+          let total = 0;
+          shoppingCart.forEach((item, index) => {
+            total += item.price;
+    
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+    
+            listItem.innerHTML = `
+              ${item.name} - $${item.price.toFixed(2)}
+              <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">&times;</button>
+            `;
+            cartList.appendChild(listItem);
+          });
+          cartTotal.innerText = total.toFixed(2);
+        }
+      }
+    
+      // Function to add items to the cart
+      function addToCart(name, price) {
+        shoppingCart.push({ name, price });
+        updateCartDisplay();
+      }
+    
+      // Function to remove an item from the cart
+      function removeFromCart(index) {
+        shoppingCart.splice(index, 1);
+        updateCartDisplay();
+      }
+    
+      // Attach event listeners to the "Add to Cart" buttons
+      document.querySelectorAll('.btn-buy').forEach((button, index) => {
+        button.addEventListener('click', function() {
+          const card = button.closest('.card');
+          const name = card.querySelector('.card-title').innerText;
+          const price = parseFloat(card.querySelector('.card-price').innerText.replace('$', ''));
+    
+          addToCart(name, price);
+        });
+      });
+    </script>
+  <script>
+// Function to perform the search and filter product cards
+document.getElementById('searchInput').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase(); // Convert search term to lowercase for case-insensitive matching
+    const productCards = document.querySelectorAll('.card'); // Get all the product cards
+
+    productCards.forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase(); // Get product title
+        const description = card.querySelector('.card-text').textContent.toLowerCase(); // Get product description
+
+        // If the search term is found in either the title or description, show the card
+        if (title.includes(searchTerm) || description.includes(searchTerm)) {
+            card.style.display = ''; // Show card
+        } else {
+            card.style.display = 'none'; // Hide card
+        }
+    });
+});
+</script>
+
+   
+</body>
+</html>

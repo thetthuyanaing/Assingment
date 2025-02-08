@@ -1,0 +1,302 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.navbar {
+    background-color: #333; /* Coffee-inspired background */
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+}
+
+.navbar-nav .nav-link {
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    background-color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    background-color: #333; /* Matches navbar for consistency */
+    
+}
+
+.dropdown-item {
+    background-color: #333; /* Default background */
+    color: #ffcc00; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #145a32;
+    transform: scale(1.05);
+}
+
+.dropdown-item:focus {
+    background-color: #6c4f3d; /* Keeps hover effect when focused */
+    color: #ffffff; /* Matches hover color */
+}
+/* Styling for Cart Icon */
+.navbar-nav .cart {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    position: relative;
+    color: #fff;
+}
+
+.navbar-nav .cart .fa-shopping-cart {
+    margin-right: 10px;
+}
+
+.navbar-nav .cart .badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+}
+
+.navbar-nav .cart-text {
+    font-weight: bold;
+}
+
+.form-inline .form-control {
+    width: 200px;
+}
+/* Style for Search Input */
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    margin: 10px auto;
+    display: block;
+    -webkit-text-fill-color: #ffcc00;
+    background-color: #333;
+    
+}
+#searchInput:focus::placeholder {
+    opacity: 0; /* Hides the placeholder when the search bar is clicked */
+}
+/* Responsive Design: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #searchInput {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    height: 200px;
+  }
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6c757d;
+  }
+  .card-text {
+    font-size: 1rem;
+    color: #495057;
+  }
+
+.card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#ffcc00;
+    margin: 15px 0;
+    background-color: #333;
+}
+.modal-content{
+    background-color: #333;
+    -webkit-text-fill-color: #ffcc00;
+}
+.modal-footer{
+    background-color: #333!important;
+    -webkit-text-fill-color: #ffcc00;
+    color: #333;
+
+}
+.modal-title {
+    background-color: #333;
+    -webkit-text-fill-color: #ffcc00;
+}
+.modal-header {
+    background-color: #333;
+    -webkit-text-fill-color: #ffcc00;
+}
+.modal-body{
+    background-color: #333;
+    -webkit-text-fill-color: #ffcc00;
+}
+.btn-secondary {
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-secondary:hover {
+    background-color: #ffcc00 !important;
+    color: #fff !important;
+}
+.btn-buy {
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .btn-buy:hover {
+    background-color: #145a32;
+    transform: scale(1.05);
+  }
+/*Footer Styling*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e4a33f;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e4a33f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #e4a33f;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+
+/* Medium Screens (Tablets Landscape and Below) */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px; /* Adjust navbar link text size */
+    }
+
+    #searchInput {
+        font-size: 14px;
+        padding: 8px 12px; /* Adjust padding */
+        max-width: 80%; /* Allow more flexibility */
+    }
+
+    .card {
+        max-width: 80%; /* Limit card width */
+        margin: 0 auto 20px; /* Center-align cards */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer sections */
+        gap: 20px;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%; /* Make each section take full width */
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}

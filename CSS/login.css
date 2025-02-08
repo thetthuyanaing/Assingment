@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(../img/login-background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: flex-start; /* Ensure content starts at the left */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Left-Aligned Box Styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    color: #ffcc00;
+}
+
+/* Form title */
+form .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Input Box Styling */
+.box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+    padding: 0.7rem 0;
+}
+
+.icon {
+    font-size: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+.input-box {
+    flex-grow: 1;
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+/* Login Button Styling */
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(90deg, #cf6c3d, #71412a);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #71412a, #cf6c3d);
+}
+
+/* Sign-Up Section */
+.sign {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.sign a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 2rem; /* Space between box and additional content */
+    }
+
+    form {
+        margin-left: 0; /* Ensure form stays on the left */
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 4rem;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
+
+    form {
+        max-width: 500px;
+        padding: 3rem;
+    }
+}

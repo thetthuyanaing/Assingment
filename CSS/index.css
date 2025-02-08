@@ -1,0 +1,445 @@
+.modal-header {
+        background-color: #333;
+        border-bottom: 2px solid #007bff;
+      }
+      .modal-title {
+        background-color: #333;
+        -webkit-text-fill-color: #ffcc00;
+      }
+      .modal-body {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        background-color: #333;
+        -webkit-text-fill-color: #ffcc00
+      }
+      .modal-body p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        background-color: #333;
+        -webkit-text-fill-color: #ffcc00;
+      }
+      .modal-footer {
+        background-color: #333 !important;
+        -webkit-text-fill-color: #ffcc00;
+        color: #ffcc00 !important;
+    }
+      .btn-signup {
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        background-color: #333 !important;
+        color: #fff !important;
+        border: none !important;
+    }
+    .btn-secondary {
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        background-color: #333 !important;
+        color: #fff !important;
+        border: none !important;
+    }
+    .btn-secondary:hover {
+        background-color: #0056b3 !important;
+        color: #fff !important;
+    }
+      .btn-signup:hover {
+        background-color: #0056b3 !important;
+        color: #fff !important;
+    }
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.navbar {
+    background-color: #333; /* Coffee-inspired background */
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+}
+
+.navbar-nav .nav-link {
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    background-color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    background-color: #333; /* Matches navbar for consistency */
+    
+}
+
+.dropdown-item {
+    background-color: #333; /* Default background */
+    color: #ffcc00; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #145a32;
+    transform: scale(1.05);
+}
+
+.dropdown-item:focus {
+    background-color: #6c4f3d; /* Keeps hover effect when focused */
+    color: #ffffff; /* Matches hover color */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../img/hero1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #333;
+    text-align: center;
+    color: #ffff;
+    padding: 100px 70px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    text-align:center;
+    margin-bottom: 5px;
+    color:#ffcc00;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    color:#ffcc00;
+
+}
+
+.featured {
+    background-color: #f8f5f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-indicators button {
+    background-color: #71412a;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #cf6c3d;
+
+}
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    color: #6c4f3d; /* Coffee-inspired color */
+    font-family: 'Georgia', serif;
+}
+.btn-coffee {
+    background-color: #6c4f3d;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.btn-coffee:hover {
+    background-color: #8b5e46;
+}
+/* Community Section */
+.community {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/event.jpg');
+    background-size:100% 100%;
+    
+    background-repeat: no-repeat;
+    text-align: left;
+    color:#ffcc00;
+    font-weight: bold;
+    padding: 100px 20px;
+}
+
+
+.subscribe-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e4a33f;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e4a33f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #e4a33f;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
+/* Responsive for tablets and medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 20px; /* Adjust logo font size */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navbar links */
+        text-align: center;
+    }
+
+    .hero {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+        background-position: center; /* Center background image */
+    }
+
+    .hero-content h2 {
+        font-size: 30px; /* Adjust headline font size */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .card {
+        margin: 10px auto; /* Center cards and reduce margins */
+        width: 90%; /* Set width to 90% of the container */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer sections */
+        text-align: center;
+    }
+}
+/* Responsive for small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Header Adjustments */
+    header {
+        font-size: 14px; /* Smaller text in the header */
+    }
+
+    header .logo {
+        font-size: 18px; /* Scale down the logo text size */
+        padding: 5px 10px; /* Compact padding */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 10px; /* Compact navigation bar */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 12px; /* Reduce font size of links */
+        padding: 5px 0; /* Add vertical spacing between links */
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        padding: 20px 10px; /* Smaller padding for mobile screens */
+        background-position: center; /* Ensure background image is centered */
+    }
+
+    .hero-content h2 {
+        font-size: 22px; /* Adjust headline font size */
+    }
+
+    .hero-content p {
+        font-size: 12px; /* Reduce font size for subtext */
+    }
+
+    /* Card Section Adjustments */
+    .card {
+        margin: 10px auto; /* Center cards on small devices */
+        width: 100%; /* Cards span full width */
+    }
+
+    .card-title {
+        font-size: 16px; /* Reduce font size in titles */
+    }
+
+    .btn-coffee {
+        font-size: 14px; /* Compact button size */
+        padding: 8px 12px; /* Adjust padding inside buttons */
+    }
+
+    /* Carousel Adjustments */
+    .carousel-item img {
+        max-height: 250px; /* Scale down image height */
+    }
+
+    .carousel-caption h5 {
+        font-size: 14px; /* Smaller font for carousel titles */
+    }
+
+    .carousel-caption p {
+        font-size: 12px; /* Compact carousel paragraph text */
+    }
+
+    /* Community Section */
+    .community {
+        padding: 40px 10px; /* Smaller padding for mobile */
+        font-size: 14px; /* General font-size adjustment */
+    }
+
+    /* Footer Adjustments */
+    .footer-container {
+        flex-direction: column; /* Stack footer sections */
+        text-align: center; /* Center align text */
+        padding: 10px 5px; /* Compact padding */
+    }
+
+    .footer-section h2 {
+        font-size: 16px; /* Reduce font size for headings */
+    }
+
+    .footer-section p,
+    .footer-section ul,
+    .footer-section a {
+        font-size: 12px; /* Smaller general text size */
+    }
+
+    .social-icons a {
+        font-size: 14px; /* Resize social icons */
+        margin: 5px; /* Reduce spacing between icons */
+    }
+
+    .subscribe-button {
+        font-size: 14px; /* Compact button text */
+        padding: 8px 10px; /* Adjust button padding */
+    }
+
+    /* General Adjustments for Small Screens */
+    body {
+        font-size: 14px; /* Universal font size for small devices */
+    }
+
+    .modal-body {
+        padding: 1rem; /* Adjust modal padding */
+    }
+
+    .modal-title {
+        font-size: 16px; /* Compact modal title */
+    }
+}

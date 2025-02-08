@@ -1,0 +1,227 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+.navbar {
+    background-color: #333; /* Coffee-inspired background */
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+}
+
+.navbar-nav .nav-link {
+    -webkit-text-fill-color: #ffcc00; /* Warm yellow text */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    background-color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    background-color: #333; /* Matches navbar for consistency */
+    
+}
+
+.dropdown-item {
+    background-color: #333; /* Default background */
+    color: #ffcc00; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #145a32;
+    transform: scale(1.05);
+}
+
+.dropdown-item:focus {
+    background-color: #6c4f3d; /* Keeps hover effect when focused */
+    color: #ffffff; /* Matches hover color */
+}
+.btn-register{
+    background-color: #007bff;
+    color: white;
+    -webkit-text-fill-color: #ffcc00;
+}
+.btn-submit{
+    background-color: #007bff;
+    color: white;
+    -webkit-text-fill-color: #ffcc00; 
+}
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+/* General Section Styling */
+#special-offer {
+    background-color: #f8f9fa;
+  }
+  
+  .offer-title {
+    color: black; /* Coffee-inspired color */
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+  }
+  
+  .offer-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-image {
+   
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .offer-price {
+    color: #c0392b; /* Discount color */
+    font-weight: bold;
+  }
+  .card-text{
+    background-color: #333;
+    -webkit-text-fill-color: #ffcc00;
+  }
+  .container-register {
+    margin: 20px auto;
+    padding: 15px;
+    -webkit-text-fill-color: #ffcc00;
+    background-color: #333;
+}
+
+
+/* Form inputs styling */
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-text-fill-color:black;
+}
+
+/* Button styling */
+.btn-submit {
+    background-color: #6c4f3d;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #8b5e46;
+    color: #fff;
+}
+  
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e4a33f;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #d4d4d4;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e4a33f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #e4a33f;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+}
